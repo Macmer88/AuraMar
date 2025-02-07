@@ -18,7 +18,7 @@ body {
     display: flex;
     position: sticky;
     top: 0;
-    background-color: rgb(139, 180, 186);
+    background-color: rgb(216, 241, 245);
     justify-content: center;
     align-items: center;
     padding: 5px;
@@ -60,14 +60,16 @@ ul {
 }
 
 a {
-    color: white;
+    color: rgb(3, 3, 3);
     text-decoration: none;
     display: flex;
     align-items: center; /* Asegura que el contenido del enlace esté centrado verticalmente */
 }
 
 a:hover {
-    background-color: #575757;
+    background-color: rgb(125, 85, 250);
+    transform: scale(1.25);
+    transition: transform 0.2s ease-in-out;
 }
 
 .contenedor_logo {
@@ -98,8 +100,11 @@ main {
     width: 100%; 
     height: auto;
 }
-
+.titulo{
+    margin-top: 30px;
+}
 .texto_auramar {
+    margin: 10px;
     padding: 10px 150px;
     text-align: justify;
     color: #e1e1e1;
