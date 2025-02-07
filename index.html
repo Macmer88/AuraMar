@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>AuraMar</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+	<header class="contenedor_nav">
+        <nav id="nav">
+            <ul>
+            <li class="item_nav"><a href="#home">Home</a></li>
+            <li class="item_nav"><a href="#reiki">Sobre el Reiki</a></li>
+            <li class="item_nav"><a href="#servicios">¿Qué ofrecemos?</a></li>
+            <li class="item_nav"><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contenedor_logo">
+        <video id="Logo_animado" width="50%" autoplay muted>
+            <source src="media/logo 1 animarc.mp4" type="video/mp4">
+            Tu navegador no soporta la etiqueta de video.
+        </video>
+    </div>
+    
+    <main>
+    <section id="home">
+        <h1>¡Bienvenido a AuraMar!</h1> <br>
+        <p class="texto_auramar">En AuraMar, nos dedicamos a ofrecer un refugio de paz y bienestar donde la energía positiva fluye y se renueva. <br>
+            Nuestra misión es ayudarte a encontrar equilibrio y armonía en tu vida diaria a través de técnicas ancestrales
+            adaptadas a las necesidades modernas. 
+        </p>
+        <p class="texto_auramar">
+            En nuestro espacio, no solo recibirás atención personalizada y cuidadosa, sino también un ambiente sereno
+            y acogedor que invita a la relajación profunda y a la introspección.
+        </p>
+        <p class="texto_auramar">
+            Nos especializamos en brindarte una experiencia transformadora, promoviendo un estado de bienestar integral
+            que abarca cuerpo, mente y espíritu.
+        </p>
+        <p class="texto_auramar">Explora nuestros servicios y descubre cómo en AuraMar podemos acompañarte en tu camino hacia 
+            una vida más plena y equilibrada.</p><br>
+        <div id="slider">
+            <img src="imagenes/slider1.jpg" alt="Slider 1">
+            <img src="imagenes/slider2.jpg" alt="Slider 2">
+            <img src="imagenes/slider3.jpg" alt="Slider 3">
+        </div>
+    </section>
+    <section id="reiki">
+        <h2>Sobre el Reiki</h2>
+        <p>Reiki es una técnica japonesa para la reducción del estrés y la relajación que promueve la curación.<br/>
+        La palabra Reiki se compone de dos palabras japonesas: </p> 
+        <ul>
+        <li>REI: significa la “sabiduría de Dios” o “ el poder superior”</li>
+        <li>KI: es la energía de la fuerza vital. teniendo como resultado la energía de la fuerza vital espiritual. Es importante aclarar que el Reiki no tiene religión.</li>
+        </ul>
+        <p>Se trata de un método simple, natural y seguro de curación espiritual, el cual permite <br/>
+            que el cuerpo absorba la energía vital. Trata a las personas en su totalidad: <br/>
+            cuerpo, emociones, mente y espíritu, logrando múltiples beneficios, como:</p>
+        <ul>
+            <li>relajación</li>
+            <li>sentimiento de paz y seguridad</li>
+            <li>bienestar general</li>
+        </ul>
+    </section>
+    <section id="servicios">
+        <h2>¿Qué ofrecemos?</h2>
+        <div class="servicio1">
+            <img src="imagenes/servicio1.jpg" title="servicios">
+            <p id="text1">Generalmente, las personas que experimentan una sesión de reiki sienten <br/>
+                un alivio inmediato a su malestar, ya sea físico o emocional. <br/>
+                Es importante aclarar que el reiki no reemplaza la medicina tradicional, <br/>
+                aquella persona que se encuentre en un tratamiento debe continuar con el mismo. <br/>
+                El reiki no es una receta mágica, se debe tener conciencia y responsabilidad.
+            </p>
+            <p id="text2">El servicio que se brindará, en principio, escucha atenta al consultante; <br/>
+                luego, se ubicará en la camilla y, de acuerdo a su necesidad, se comenzará <br/>
+                con la sesión, con música serena y una pequeña meditación.</p>
+            <p id="text3"><br/>
+                <br/>
+                </p>
+        </div>
+    </section>
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form method="POST" action="registro.php">
+            <input type="text" name="nombre" placeholder="nombre" required><br>
+            <input type="text" name="apellido" placeholder="apellido" required><br>
+            <input type="email" name="correo" placeholder="email" required><br>
+            <textarea name="mensaje" placeholder="mensaje" required></textarea><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+    </main>
+    <footer>
+        <p>Contacto: 0123456789</p>
+        <p>Dirección: Calle 123, 456, Ciudad</p>
+    </footer>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>
