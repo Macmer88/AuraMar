@@ -18,22 +18,22 @@ body {
     display: flex;
     position: sticky;
     top: 0;
-    background-color: black;
+    background-color: rgb(139, 180, 186);
     justify-content: center;
     align-items: center;
+    padding: 5px;
 }
 
 div.logo {
     width: fit-content;
     display: flex;
-    background-color: #f6f6f6;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 0;
 }
 
 div.logo img {
-    width: 50px;
+    width: 90px;
 }
 
 #nav {
