@@ -18,7 +18,7 @@ body {
     display: flex;
     position: sticky;
     top: 0;
-    background-color: rgb(216, 241, 245);
+    background-color: #a1d2e2;
     justify-content: center;
     align-items: center;
     padding: 5px;
@@ -55,8 +55,8 @@ ul {
 }
 
 .item_nav {
-    padding: 10px;
     font-size: 1.25rem;
+    padding: 15px;
 }
 
 a {
@@ -67,13 +67,15 @@ a {
 }
 
 a:hover {
-    background-color: rgb(125, 85, 250);
+    width: 100%;
+    background-color: rgba(111, 173, 193, 0.5);
+    border-radius: 20%;
     transform: scale(1.25);
     transition: transform 0.2s ease-in-out;
 }
 
 .contenedor_logo {
-    background-color: rgb(119, 81, 242);
+    background-color: rgba(185, 247, 189, 0.75);
     display: flex;
     width: 100%;
     justify-content: center;
@@ -93,7 +95,7 @@ header {
 }
 
 main {
-    background-color: #333;
+    background-color: rgba(185, 247, 189, 0.60);
     color: white;
     padding: 10px 150px;
     text-align: center;
@@ -104,19 +106,19 @@ main {
     text-align: center;
     margin-top: 30px;
 }
-#home {
+.texto_sections {
     width: 70%;
     margin: 10px auto;
     padding: 10px 10px;
     text-align: justify;
-    color: #e1e1e1;
+    color: #000000;
     font-size: 1.5rem;
     margin-bottom: 20px;
 }
 
 footer {
     display: flex;
-    background-color: #4b0283;
+    background-color: #6c9ec6;
     color: white;
     padding: 10px;
     text-align: center;
