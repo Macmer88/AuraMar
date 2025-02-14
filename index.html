@@ -8,92 +8,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="media/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/media/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="media/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/media/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="media/favicon/android-chrome-512x512.png">
     <link rel="manifest" href="/site.webmanifest">
 </head>
-<body>
-	<header class="contenedor_nav">
-        <div class="logo">
-            <img src="media/imagen1.png" alt="Logo AuraMar">
+<body class="container">
+	<header id="header" class="container">
+        <div id="divlogo">
+            <img src="media/auramar logo-Photoroom.png" alt="Logo AuraMar">
         </div>
-        <nav id="nav">
-            <ul>
-            <li class="item_nav"><a href="#home">Home</a></li>
-            <li class="item_nav"><a href="#reiki">Sobre el Reiki</a></li>
-            <li class="item_nav"><a href="#servicios">¿Qué ofrecemos?</a></li>
-            <li class="item_nav"><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+        <div id="navbar" class="container">
+            <div class="boton_nav" ><a href="#inicio">AuraMar</a></div>
+            <div class="boton_nav "><a href="#reiki">El Reiki</a></div>
+            <div class="boton_nav" ><a href="#historia">Historia</a></div>
+            <div class="boton_nav" ><a href="#beneficios">Beneficios</a></div>
+            <div class="boton_nav" ><a href="#sobremi">Sobre mi</a></div>
+            <div class="boton_nav" ><a href="#galeria">Galeria</a></div>
+            <div class="boton_nav" ><a href="#donde_estamos">Donde estamos?</a></div>
+            <div class="boton_nav"><a href="#contacto">Contacto</a></div>
+            
+        </div>
     </header>
-    <div class="contenedor_logo">
-        <video id="Logo_animado" width="45%" autoplay muted>
-            <source src="media/logo 1 animar.webm" type="video/webm">
-            Tu navegador no soporta la etiqueta de video.
-        </video>
-    </div>
     
-    <main>
-    <section id="home" class="texto_sections">
-        <h1 class="titulo">¡Bienvenido a AuraMar!</h1> <br>
-        <p class="texto_auramar">En AuraMar, nos dedicamos a ofrecer un refugio de paz y bienestar donde la energía positiva fluye y se renueva. <br>
-            Nuestra misión es ayudarte a encontrar equilibrio y armonía en tu vida diaria a través de técnicas ancestrales
-            adaptadas a las necesidades modernas. 
-        </p>
-        <p class="texto_auramar">
-            En nuestro espacio, no solo recibirás atención personalizada y cuidadosa, sino también un ambiente sereno
-            y acogedor que invita a la relajación profunda y a la introspección.
-        </p>
-        <p class="texto_auramar">
-            Nos especializamos en brindarte una experiencia transformadora, promoviendo un estado de bienestar integral
-            que abarca cuerpo, mente y espíritu.
-        </p>
-        <p class="texto_auramar">Explora nuestros servicios y descubre cómo en AuraMar podemos acompañarte en tu camino hacia 
-            una vida más plena y equilibrada.</p><br>
-        <div id="slider">
-            <img src="imagenes/slider1.jpg" alt="Slider 1">
-            <img src="imagenes/slider2.jpg" alt="Slider 2">
-            <img src="imagenes/slider3.jpg" alt="Slider 3">
-        </div>
-    </section>
-    <section id="reiki" class="texto_sections">
-        <h2>Sobre el Reiki</h2>
-        <p>Reiki es una técnica japonesa para la reducción del estrés y la relajación que promueve la curación.<br/>
-        La palabra Reiki se compone de dos palabras japonesas: </p> <br>
-        <p>REI: significa la “sabiduría de Dios” o “ el poder superior”</p> 
-        <p>KI: es la energía de la fuerza vital.</p><br>
-        <p>Es importante aclarar que el Reiki no tiene religión.</p>
-        <p>Se trata de un método simple, natural y seguro de curación espiritual, el cual permite que el cuerpo absorba la energía vital. <br>
-        Trata a las personas en su totalidad: cuerpo, emociones, mente y espíritu. Logrando múltiples beneficios, como relajación, sentimiento de paz y seguridad, y bienestar general</p>
-    </section>
-    <section id="servicios" class="texto_sections">
-        <h2>¿Qué ofrecemos?</h2>
-        <div class="servicio1">
-            <img src="imagenes/servicio1.jpg" title="servicios">
-            <p id="text1">Generalmente, las personas que experimentan una sesión de reiki sienten <br/>
-                un alivio inmediato a su malestar, ya sea físico o emocional. <br/>
-                Es importante aclarar que el reiki no reemplaza la medicina tradicional, <br/>
-                aquella persona que se encuentre en un tratamiento debe continuar con el mismo. <br/>
-                El reiki no es una receta mágica, se debe tener conciencia y responsabilidad.
+    <main id="main" class="container">
+        <section id="contenedor_logo" class="container">
+            <video id="Logo_animado" width="60%" autoplay muted>
+                <source src="media/logo animado.webm" type="video/webm">
+                Tu navegador no soporta la etiqueta de video.
+            </video>
+        </section>
+        <section id="inicio" class="container">
+            <h1 >¡Bienvenido a AuraMar!</h1> <br>
+            <p class="texto_sections">En AuraMar, nos dedicamos a ofrecer un refugio de paz y bienestar donde la energía positiva fluye y se renueva. <br>
+                Nuestra misión es ayudarte a encontrar equilibrio y armonía en tu vida diaria a través de técnicas ancestrales
+                adaptadas a las necesidades modernas. 
             </p>
-            <p id="text2">El servicio que se brindará, en principio, escucha atenta al consultante; <br/>
-                luego, se ubicará en la camilla y, de acuerdo a su necesidad, se comenzará <br/>
-                con la sesión, con música serena y una pequeña meditación.</p>
-            <p id="text3"><br/>
-                <br/>
+            <p class="texto_sections">
+                En nuestro espacio, no solo recibirás atención personalizada y cuidadosa, sino también un ambiente sereno
+                y acogedor que invita a la relajación profunda y a la introspección.
+            </p>
+            <p class="texto_sections">
+                Nos especializamos en brindarte una experiencia transformadora, promoviendo un estado de bienestar integral
+                que abarca cuerpo, mente y espíritu.
+            </p>
+            <p class="texto_sections">Explora nuestros servicios y descubre cómo en AuraMar podemos acompañarte en tu camino hacia 
+                una vida más plena y equilibrada.</p><br>
+            <div id="slider">
+                <img src="imagenes/slider1.jpg" alt="Slider 1">
+                <img src="imagenes/slider2.jpg" alt="Slider 2">
+                <img src="imagenes/slider3.jpg" alt="Slider 3">
+            </div>
+        </section>
+        <section id="reiki" class="container">
+            <h1>Sobre el Reiki</h1>
+            <p class="texto_sections">Reiki es una técnica japonesa para la reducción del estrés y la relajación que promueve la curación.<br/>
+            La palabra Reiki se compone de dos palabras japonesas: </p> <br>
+            <p class="texto_sections">REI: significa la “sabiduría de Dios” o “ el poder superior”</p> 
+            <p class="texto_sections">KI: es la energía de la fuerza vital.</p><br>
+            <p class="texto_sections">Es importante aclarar que el Reiki no tiene religión.</p>
+            <p class="texto_sections">Se trata de un método simple, natural y seguro de curación espiritual, el cual permite que el cuerpo absorba la energía vital. <br>
+            Trata a las personas en su totalidad: cuerpo, emociones, mente y espíritu. Logrando múltiples beneficios, como relajación, sentimiento de paz y seguridad, y bienestar general</p>
+        </section>
+        <section id="servicios" class="container">
+            <h1>¿Qué ofrecemos?</h1>
+            <div class="servicios">
+                <img src="imagenes/servicio1.jpg" title="servicios">
+                <p class="texto_sections">Generalmente, las personas que experimentan una sesión de reiki sienten <br/>
+                    un alivio inmediato a su malestar, ya sea físico o emocional. <br/>
+                    Es importante aclarar que el reiki no reemplaza la medicina tradicional, <br/>
+                    aquella persona que se encuentre en un tratamiento debe continuar con el mismo. <br/>
+                    El reiki no es una receta mágica, se debe tener conciencia y responsabilidad.
                 </p>
-        </div>
-    </section>
-    <section id="contacto" class="texto_sections">
-        <h2>Contacto</h2>
-        <form method="POST" action="registro.php">
-            <input type="text" name="nombre" placeholder="nombre" required><br>
-            <input type="text" name="apellido" placeholder="apellido" required><br>
-            <input type="email" name="correo" placeholder="email" required><br>
-            <textarea name="mensaje" placeholder="mensaje" required></textarea><br>
-            <input type="submit" value="Enviar">
-        </form>
-    </section>
+                <p class="texto_sections">El servicio que se brindará, en principio, escucha atenta al consultante; <br/>
+                    luego, se ubicará en la camilla y, de acuerdo a su necesidad, se comenzará <br/>
+                    con la sesión, con música serena y una pequeña meditación.</p>
+                <p class="texto_sections"><br/>
+                    <br/>
+                    </p>
+            </div>
+        </section>
+        <section id="contacto" class="texto_sections">
+            <h1>Contacto</h1>
+            <form method="POST" action="registro.php">
+                <input type="text" name="nombre" placeholder="nombre" required><br>
+                <input type="text" name="apellido" placeholder="apellido" required><br>
+                <input type="email" name="correo" placeholder="email" required><br>
+                <textarea name="mensaje" placeholder="mensaje" required></textarea><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
     </main>
     <footer>
         <p>Contacto: 0123456789</p>
