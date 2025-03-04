@@ -53,10 +53,10 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 80%;
-    border: #000000 1px solid;
-    border-radius: 20%;
+    height: 2rem;
+    border-radius: 5%;
     margin: 1% 1%;
+    padding: 1%;
 }
 .boton a{
     text-decoration: none;
@@ -128,14 +128,96 @@ div.maestros img{
     align-content: center;
 }
 
-
-
-footer {
+#contenedor_beneficios{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 20px 0;
+}
+#relajacion, #equilibrio, #sanacion, #claridad, #emociones{
+    width: 80%;
+    height: 2.5rem;
+    border: solid, #6c9ec6;
+    border-radius: 5%;
+    margin: 1.5%;
+    align-items: center;
+}
+
+#relajacion:hover, #equilibrio:hover, #sanacion:hover, #claridad:hover, #emociones:hover{
     background-color: #6c9ec6;
+    color: white;
+    width: 100%;
+    transform: scale(1.25);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+.masinfo_relajacion,.masinfo_equilibrio,.masinfo_claridad, .masinfo_emociones, .masinfo_sanacion{
+    display: none;
+}
+#relajacion_mas,#equilibrio_mas, #sanacion_mas, #claridad_mas, #equilibrio_mas{
+    display:none;
+}
+
+
+.cerrar:hover{
+    background-color: #6c9ec6;
+    color: white;
+    width: 100%;
+    transform: scale(1.25);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+
+#ubicacionfooter{
+    margin: 5% auto;
+    flex-direction: column;
+    height: 75%;
+    object-fit: contain;
+}
+#redes_contacto{
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    height: 75%;
+    object-fit: contain;
+}
+.ubicacionfooter{
+    width: 100%;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    object-fit: contain;
+    align-items: center;
+    text-align: left;
+    margin: 10% auto;
+}
+.ubicacionfooter p{
+    width: 100%;
+}
+.footer{
+    width: 80%;
+    display: flex;
+}
+.facebook, .gmail,.instagram{
+    width: 20%;
+    height: 20%;
+    margin: 1% auto;
+}
+.logo_facebook, .logo_gmail, .logo_instagram{
+        width: 80%;
+        height: 800%;
+        object-fit: contain;
+}
+footer {
+    align-items: center;
+    display: flex;
+    background-color: #a3cbec;
     color: white;
     padding: 10px;
     text-align: center;
     width: 100%; 
     height: auto;
+    margin: 1% auto;
 }
