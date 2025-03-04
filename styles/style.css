@@ -99,6 +99,7 @@ body {
 }
 
 h1{
+    width:100%;
     text-align: center;
     margin-top: 2%;
     font-size: 2em;
@@ -194,6 +195,28 @@ div.maestros img{
     cursor: pointer;
 }
 
+#sobremi{
+    flex-direction: column;
+}
+.mari{
+    display: flex;
+    flex-direction: row;
+    padding: 1%;
+    margin: 1% auto;
+    scroll-margin-top: 70px;
+}
+div.imagen_mari{
+    justify-content: flex-start;
+    width: 30%;
+}
+
+div.imagen_mari img{
+    object-fit: contain;
+    width: 100%;
+    margin: 1%;
+    padding: 1%;
+    align-self: self-start;
+}
 
 #ubicacionfooter{
     margin: 5% auto;
@@ -208,6 +231,9 @@ div.maestros img{
     height: 75%;
     object-fit: contain;
 }
+
+
+
 .ubicacionfooter{
     width: 100%;
     margin: 5% auto;
