@@ -21,7 +21,10 @@ body {
 }
 #header{
     padding: 0;
-    margin: 0;
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+
 }
 #divlogo {
     background-color: #ffffff;
@@ -92,6 +95,7 @@ body {
     align-items: center;
     padding: 1%;
     margin: 1% auto;
+    scroll-margin-top: 70px;
 }
 
 h1{
@@ -155,15 +159,36 @@ div.maestros img{
 .masinfo_relajacion,.masinfo_equilibrio,.masinfo_claridad, .masinfo_emociones, .masinfo_sanacion{
     display: none;
 }
+.contenedor_masinfo{
+    padding: 3%;
+}
 #relajacion_mas,#equilibrio_mas, #sanacion_mas, #claridad_mas, #equilibrio_mas{
     display:none;
+    border-radius: 5%;
+    background-color: #d0e6f7;
+    color: white;
+    width: 90%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    padding: 10% auto;
+
+}
+.cerrar{
+    width: 10%;
+    height: fit-content;
+    display: flex;
+    object-fit: contain;
+    margin: 1%;
+    padding: 0;
+}
+.cerrar img{
+    width: 100%;
+    height: fit-content;
+    object-fit: contain;
 }
 
 
 .cerrar:hover{
-    background-color: #6c9ec6;
-    color: white;
-    width: 100%;
     transform: scale(1.25);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     cursor: pointer;
