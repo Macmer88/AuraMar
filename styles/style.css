@@ -140,6 +140,7 @@ div.maestros img{
     width: 100%;
     margin: 20px 0;
 }
+
 #relajacion, #equilibrio, #sanacion, #claridad, #emociones{
     width: 80%;
     height: 2.5rem;
@@ -265,8 +266,8 @@ div.imagen_mari img{
     margin: 1% auto;
 }
 .logo_facebook, .logo_gmail, .logo_instagram{
-        width: 80%;
-        height: 800%;
+        width: 40%;
+        height: 400%;
         object-fit: contain;
 }
 footer {
