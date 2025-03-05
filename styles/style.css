@@ -231,6 +231,7 @@ div.imagen_mari img{
     object-fit: contain;
 }
 #redes_contacto{
+    margin: 1%;
     display: flex;
     flex-direction: column;
     height: 75%;
