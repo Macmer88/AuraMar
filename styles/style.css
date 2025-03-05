@@ -141,6 +141,10 @@ div.maestros img{
     margin: 20px 0;
 }
 
+#contenedor_beneficios:hover {
+    transition: 0.4s;
+}
+
 #relajacion, #equilibrio, #sanacion, #claridad, #emociones{
     width: 80%;
     height: 2.5rem;
