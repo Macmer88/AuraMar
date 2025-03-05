@@ -265,8 +265,8 @@ div.imagen_mari img{
     display: flex;
 }
 .facebook, .gmail,.instagram{
-    width: 70%;
-    height: 15%;
+    width: 80%;
+    height: 20%;
     margin: 1% auto;
 }
 .logo_facebook, .logo_gmail, .logo_instagram{
