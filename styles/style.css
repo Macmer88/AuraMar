@@ -109,7 +109,7 @@ h1{
     font-weight:300;
     line-height: 1.75;
     width: 100%;
-    margin: 10px auto;
+    margin: 1% 1%;
     text-align: justify;
     color: #000000;
     font-size: 1.5rem;
@@ -205,6 +205,9 @@ div.maestros img{
     margin: 1% auto;
     scroll-margin-top: 70px;
 }
+.fotochica{
+    display: none;
+}
 div.imagen_mari{
     justify-content: flex-start;
     width: 30%;
@@ -225,7 +228,6 @@ div.imagen_mari img{
     object-fit: contain;
 }
 #redes_contacto{
-    margin: 5% auto;
     display: flex;
     flex-direction: column;
     height: 75%;
@@ -271,5 +273,95 @@ footer {
     text-align: center;
     width: 100%; 
     height: auto;
-    margin: 1% auto;
+}
+.copyrigth{
+    margin-top: 0;
+    margin-bottom: 2%;
+    padding: 0;
+    text-align: center;
+}
+
+/*Metaqueries
+ *
+ * 1. Tablets (��768px)
+ * 2. Mobile (��480px)
+ * 3. Large screens (��1200px) Por defecto
+ */
+
+ @media (min-width: 481px) and (max-width: 768px) {
+    /* Tus estilos exclusivos para tablets */
+
+    .boton{
+    width: 5.25rem;
+    }
+    #main{
+        width: 100%;
+    }
+    .texto_maestros, .texto_sections{
+        width: 100%;
+        font-size: 1rem;
+        padding: 3%;
+    }
+    div.maestros img{
+        width: 20%;
+        height: 20%;
+        margin: 1%;
+        padding: 1%;
+    }
+    .mari{
+        margin: 1%;
+        width: 100%;
+        display: inline-flex;
+        flex-direction: row;
+        padding: 1%;
+        scroll-margin-top: 70px;
+    }
+    .mari_grande{
+        display: none;
+    }
+    #texto_chico_foto{
+        flex-direction: row;
+    }
+    .fotochica{
+        display: flex;
+                width: 25%;
+                margin: 2%;
+    }
+    .fotochica img{
+        display: flex;
+        width: 90%;
+    }
+    .texto_chico{
+        text-align: justify;
+        align-items: center;
+        justify-content: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight:300;
+        line-height: 1.75;
+        padding: 2%;
+    }
+    div.imagen_mari{
+        display: none;
+    }
+    .footer{
+        flex-direction: column;
+        width: 100%;
+    }
+    #redes_contacto{
+        flex-direction: row;
+        max-height: 5rem;
+    }
+    #ubicacionfooter{
+        width: 100%;
+        margin: 0;
+        padding: 3%;
+    }
+    #ubicacionfooter iframe{
+        width: 100%;
+    }
+    #logo_redes{
+        justify-content: center;
+        width: 60%;
+        padding: 8%;
+    }
 }
