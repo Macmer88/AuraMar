@@ -198,6 +198,9 @@ div.maestros img{
 #sobremi{
     flex-direction: column;
 }
+.texto_chico{
+    display:none
+}
 .mari{
     display: flex;
     flex-direction: row;
