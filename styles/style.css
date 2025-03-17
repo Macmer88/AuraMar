@@ -252,11 +252,11 @@ div.imagen_mari img{
     height: 75%;
     object-fit: contain;
     align-items: center;
+    padding: 3% 0;
 }
 
 .ubicacionfooter{
     width: 100%;
-    margin: 5% auto;
     display: flex;
     flex-direction: column;
     object-fit: contain;
