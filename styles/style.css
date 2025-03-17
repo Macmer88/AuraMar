@@ -222,6 +222,14 @@ div.imagen_mari{
     width: 30%;
 }
 
+#imagen_sobremi {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin: 1%;
+    padding: 1%;
+}
+
 div.imagen_mari img{
     object-fit: contain;
     width: 100%;
@@ -237,7 +245,8 @@ div.imagen_mari img{
     object-fit: contain;
 }
 #redes_contacto{
-    margin: 5% auto;
+    width: 50%;
+    margin: 1%;
     display: flex;
     flex-direction: column;
     height: 75%;
@@ -245,8 +254,6 @@ div.imagen_mari img{
     align-items: center;
     padding: 3% 0;
 }
-
-
 
 .ubicacionfooter{
     width: 100%;
@@ -264,16 +271,35 @@ div.imagen_mari img{
     width: 80%;
     display: flex;
 }
-.facebook, .gmail,.instagram{
-    width: 100%;
+
+.facebook,.gmail,.instagram{
+    width: 80%;
     height: 20%;
     margin: 1% auto;
 }
-.logo_facebook, .logo_gmail, .logo_instagram{
-        width: 70%;
-        height: 700%;
-        object-fit: contain;
+
+
+.logo_facebook {
+    margin-top: 16.5%;
+    width: 70%;
+    height: 600%;
+    object-fit: contain;
 }
+.logo_gmail, .logo_instagram{
+    margin-top: 30%;
+    width:70%;
+    height: 600%;
+    object-fit: contain;
+}
+
+#container_direccion {
+    width: 85%;
+}
+
+#container_contacto {
+    width: 85%;
+}
+
 footer {
     align-items: center;
     display: flex;
@@ -360,6 +386,7 @@ footer {
     #redes_contacto{
         flex-direction: row;
         max-height: 5rem;
+            width: 100%;
     }
     #ubicacionfooter{
         width: 100%;
