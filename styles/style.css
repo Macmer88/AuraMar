@@ -12,7 +12,7 @@ body {
     align-items: center;
     margin: 0 auto;
     }
-
+    
 .container {
     width: 100%;
     display: flex;
@@ -49,6 +49,19 @@ body {
     padding: 0;
     margin: 1%;
 }
+
+#reiki, #historia, #inicio {
+    border-radius: 2%;
+    width: 100%;
+    background-color: rgba(185, 247, 189, 0.75);
+}
+
+#inicio p, #reiki p, #historia p {
+    padding: 2%;
+    margin-left: 0px;
+    font-size: 18px;
+}
+
 .boton{
     background-color: #cac2ed;
     color: #000000;
@@ -86,7 +99,8 @@ body {
     display: flex;
     width: 100%;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
+    border-radius: 2%;
 }
 
 #inicio, #reiki, #servicios, #historia, #beneficios, .beneficio{
@@ -101,8 +115,15 @@ body {
 h1{
     width:100%;
     text-align: center;
-    margin-top: 2%;
+    margin-top: 1%;
     font-size: 2em;
+}
+
+h2{
+    width:100%;
+    text-align: center;
+    margin-top: 0%;
+    font-size: 1.6em;
 }
 .texto_sections{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -231,6 +252,7 @@ div.imagen_mari{
 }
 
 div.imagen_mari img{
+    border: dotted 2px;
     object-fit: contain;
     width: 100%;
     margin: 1%;
@@ -280,24 +302,45 @@ div.imagen_mari img{
 
 
 .logo_facebook {
-    margin-top: 16.5%;
+    margin-top: 23%;
     width: 70%;
     height: 600%;
     object-fit: contain;
 }
 .logo_gmail, .logo_instagram{
-    margin-top: 30%;
+    margin-top: 44%;
     width:70%;
     height: 600%;
     object-fit: contain;
 }
 
+.logo_facebook:hover {
+    transition: 0.5s;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.logo_gmail:hover, .logo_instagram:hover {
+    transition: 0.5s;
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
 #container_direccion {
-    width: 85%;
+    width: 100%;
 }
 
 #container_contacto {
-    width: 85%;
+    width: 100%;
+}
+
+#puntos {
+    font-size: 52px;
+    width: 100%;
+}
+
+#footer {
+    width: 80%;
 }
 
 footer {
