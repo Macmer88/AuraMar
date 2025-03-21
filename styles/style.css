@@ -50,13 +50,13 @@ body {
     margin: 1%;
 }
 
-#reiki, #historia, #inicio {
+#reiki, #historia, #inicio, #sobremi {
     border-radius: 2%;
     width: 100%;
     background-color: rgba(185, 247, 189, 0.75);
 }
 
-#inicio p, #reiki p, #historia p {
+#inicio p, #reiki p, #historia p, #sobremi p {
     padding: 2%;
     margin-left: 0px;
     font-size: 18px;
@@ -122,7 +122,7 @@ h1{
 h2{
     width:100%;
     text-align: center;
-    margin-top: 0%;
+    margin-top: 1%;
     font-size: 1.6em;
 }
 .texto_sections{
@@ -143,8 +143,8 @@ h2{
     width: 100%;
 }
 div.maestros img{
-    width: 220px;
-    height: 300px;
+    width: auto;
+    height: 230px;
     margin: 1%;
     padding: 1%;
 }
@@ -182,6 +182,7 @@ div.maestros img{
     transform: scale(1.25);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     cursor: pointer;
+    transition: 0.4s;
 }
 .masinfo_relajacion,.masinfo_equilibrio,.masinfo_claridad, .masinfo_emociones, .masinfo_sanacion{
     display: none;
@@ -189,6 +190,7 @@ div.maestros img{
 .contenedor_masinfo{
     padding: 3%;
 }
+
 #relajacion_mas,#equilibrio_mas, #sanacion_mas, #claridad_mas, #emociones_mas{
     display:none;
     border-radius: 5%;
