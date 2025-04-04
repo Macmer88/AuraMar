@@ -10,32 +10,57 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/media/favicon/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="512x512" href="media/favicon/android-chrome-512x512.png">
     <link rel="manifest" href="/site.webmanifest">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body class="container">
     <header id="header" class="container">
-        <div id="divlogo">
-            <img src="media/auramar logo-Photoroom.png" alt="Logo AuraMar">
-        </div>
         <div id="navbar" class="container">
+            <div id="divlogo">
+                <img src="media/auramar logo.png" alt="Logo AuraMar">
+            </div>
             <div class="boton"><a href="#inicio">AuraMar</a></div>
-            <div class="boton "><a href="#reiki">El Reiki</a></div>
+            <div class="boton"><a href="#reiki">El Reiki</a></div>
             <div class="boton"><a href="#historia">Historia</a></div>
             <div class="boton"><a href="#beneficios">Beneficios</a></div>
             <div class="boton"><a href="#sobremi">Sobre mí</a></div>
             <div class="boton"><a href="#ubicacionfooter">¿Dónde estamos?</a></div>
             <div class="boton"><a href="#redes_contacto">Contacto</a></div>
         </div>
-        <div id="menu_celu" class="container" type="checkbox">
-            <ul>
-                <li class="boton_celu"><a href="#inicio">AuraMar</a></li>
-                <li class="boton_celu"><a href="#reiki">El Reiki</a></li>
-                <li class="boton_celu"><a href="#historia">Historia</a></li>
-                <li class="boton_celu"><a href="#beneficios">Beneficios</a></li>
-                <li class="boton_celu"><a href="#sobremi">Sobre mí</a></li>
-                <li class="boton_celu"><a href="#ubicacionfooter">¿Dónde estamos?</a></li>
-                <li class="boton_celu"><a href="#redes_contacto">Contacto</a></li>
-            </ul>
+        <div id="menu_celu" class="custom-bootstrap">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="menu_hamburguesa">
+                <div class="container-fluid" >
+                    <a id="letra_menu" class="navbar-brand" href="#header">Menú</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#inicio">AuraMar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#reiki">El Reiki</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#historia">Historia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#beneficios">Beneficios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#sobremi">Sobre mí</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#ubicacionfooter">¿Dónde estamos?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#redes_contacto">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
     </header>
 
@@ -180,51 +205,40 @@
             </div>
         </section>
         <section id="sobremi" class="container">
-        <h2>Sobre mí</h2>
-        <div class="container mari">
-            <div class="container" id="sobremi">
+            <h2>Sobre mí</h2>
                 <img src="media/imgmari.jpeg" alt="foto de la reikista" id="imagen_sobremi">
                 <p class="texto_sections">
                     "Soy Marisa Aguirre, reikista certificada y apasionada por el bienestar integral. Mi camino en el Reiki comenzó bajo la guía de la Maestra Silvana Ciallo, quien me introdujo al profundo Camino de la Armonía. Esta filosofía no solo se trata de la sanación energética, sino de cultivar un equilibrio en todos los aspectos de la vida: mente, cuerpo y espíritu. A través de la meditación, la respiración consciente y la conexión con la energía universal, aprendí a liberar bloqueos, aliviar el estrés y promover la autocuración.
-                    Hoy, ofrezco sesiones personalizadas, combinando mis conocimientos y experiencias para ayudarte a encontrar la paz interior, sanar heridas emocionales y físicas, y reconectar con tu esencia más auténtica. Te invito a descubrir el poder transformador del Reiki y a iniciar tu propio camino hacia la armonía."
-                    
+                    Hoy, ofrezco sesiones personalizadas, combinando mis conocimientos y experiencias para ayudarte a encontrar la paz interior, sanar heridas emocionales y físicas, y reconectar con tu esencia más auténtica. Te invito a descubrir el poder transformador del Reiki y a iniciar tu propio camino hacia la armonía."   
                 </p>
-            </div>
-        </div>
-            
         </section>
     </main>
-    <footer id="footer" class="container texto_sections">
-        <div class="footer">
-
-            <div id="ubicacionfooter" class="container"><iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.004091769293!2d-58.3955562!3d-34.6798462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccc9542718593%3A0x5951461315b37d2c!2sSantiago%20Plaul%20561%2C%20B1823CSE%20Gerli%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1741044303324!5m2!1ses-419!2sar"
-                    width="80%" height="240" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div id='redes_contacto' class="container">
-                <div class="container" id="logo_redes">
-                    <div class="container gmail"><a href="mailto:marisaaguirre.salud@gmail.com" class="gmail container"><img class="logo_gmail" src="media/official-gmail-icon-2020-.svg" alt="logo gmail"></a></div>
-                    <div class="container instagram"><a href="https://www.instagram.com/marisagui22/" target="_blank" class="instagram container"><img class="logo_instagram" src="media/instagram-2016-5.svg" alt="logo instagram"></a></div>
-                </div>
-                <div class="container ubicacionfooter">
-                    <div class="container" id="container_contacto">
-                        <p>Contacto: <a href="https://wa.me/+541134064195" target="_blank">+541134064195</a></p>
-                    </div>
-                    <div class="container" id="container_direccion">
-                        <p>Dirección: Santiago Plaul 561, Gerli, Buenos Aires.</p>
-                    </div>
-                <div id="puntos"><p>. . . . . . .</p></div>
-                </div>
-            </div>
-
+    <footer id="footer" class="container texto_sections" class="footer">
+        <div id="ubicacionfooter" class="container"><iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.004091769293!2d-58.3955562!3d-34.6798462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccc9542718593%3A0x5951461315b37d2c!2sSantiago%20Plaul%20561%2C%20B1823CSE%20Gerli%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1741044303324!5m2!1ses-419!2sar"
+            allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        
+        <div id='redes_contacto' class="container">
+            <div class="container" id="logo_redes">
+                <div id="wpp" class="container whatsapp"><a href="https://wa.me/+541134064195" class="whatsapp container"><img class="logo_whatsapp" src="media/whatsapp.svg" alt="logo whatsapp"></a></div>
+                <div id="gmail" class="container gmail"><a href="mailto:marisaaguirre.salud@gmail.com" class="gmail container"><img class="logo_gmail" src="media/official-gmail-icon-2020-.svg" alt="logo gmail"></a></div>
+                <div id="instagram" class="container instagram"><a href="https://www.instagram.com/marisagui22/" target="_blank" class="instagram container"><img class="logo_instagram" src="media/instagram-2016-5.svg" alt="logo instagram"></a></div>
+            </div>
+            <div class="container ubicacionfooter">
+                <div class="container" id="container_contacto">
+                    <p>Contacto: <a href="https://wa.me/+541134064195" target="_blank">+541134064195</a></p>
+                </div>
+                <div class="container" id="container_direccion">
+                    <p>Dirección: Santiago Plaul 561, Gerli, Buenos Aires.</p>
+                </div>
+            </div>
+        </div>
     </footer>
     <div class="copyrigth">
         <p>© 2025 AuraMar. Todos los derechos reservados.</p>
     </div>
     <script src="scripts/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
