@@ -33,7 +33,7 @@ body {
 #divlogo {
     background-color: #ffffff;
     display: flex;
-    width: 18%;
+    width: 500px;
     height: 100%;
     justify-content: center;
     align-items: center;
@@ -41,13 +41,14 @@ body {
     margin: 0;
 }
 #divlogo img {
-    width: 60%;
+    width: 100%;
     height: 100%;
     max-height: 70px;
     max-width: 60px;
 }
 
 #navbar{
+    width: 100%;
     justify-content: center;
     align-items: center;
     padding: 0;
@@ -61,7 +62,7 @@ body {
 }
 
 #inicio p, #reiki p, #historia p, #sobremi p {
-    padding: 2%;
+    padding: 1%;
     margin-left: 0px;
     font-size: 17px;
 }
@@ -73,29 +74,32 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 2rem;
+    height: 2.5rem;
     border-radius: 5%;
-    margin: 1% 1%;
-    padding: 1%;
+    margin: 0.8% 0.2%;
 }
 .boton a{
     text-decoration: none;
     color: inherit;
     text-align: center;
     width: 100%;
+    font-size: 14px;
+}
+.boton a:hover{
+    color: #000000;
+    font-size: 15px;
 }
 .boton:hover {
     background-color: rgba(111, 173, 193, 0.5);
     border-color: rgb(111, 173, 193);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    transform: scale(1.25);
+    transform: scale(1.1);
     transition: transform 0.2s ease-in-out;
 }
 
-
 #main {
     background-color: rgba(185, 247, 189, 0.60);
-    width: 80%;
+    width: 90%;
     padding:1%;
     flex-direction: column;
 }
@@ -109,7 +113,7 @@ body {
     border-radius: 2%;
 }
 
-#inicio, #reiki, #servicios, #historia, #beneficios, .beneficio{
+#inicio, #reiki, #servicios, #historia, #beneficios, #sobremi, .beneficio{
     flex-direction: column;
     justify-content:center;
     align-items: center;
@@ -163,29 +167,29 @@ div.maestros img{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    margin: 20px 0;
+    width: 80%;
+    margin: 10px 0;
 }
 
 #contenedor_beneficios:hover {
-    transition: 0.4s;
+    transition: 0.5s;
 }
 
 #relajacion, #equilibrio, #sanacion, #claridad, #emociones{
-    width: 80%;
+    width: 70%;
     height: 2.5rem;
     border: solid, #6c9ec6;
-    border-radius: 5%;
-    margin: 1.5%;
+    border-radius: 2%;
+    margin: 1%;
     align-items: center;
 }
 
 #relajacion:hover, #equilibrio:hover, #sanacion:hover, #claridad:hover, #emociones:hover{
     background-color: #6c9ec6;
     color: white;
-    width: 100%;
-    transform: scale(1.25);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    width: 80%;
+    transform: scale(1.1, 1);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
     cursor: pointer;
     transition: 0.4s;
 }
@@ -235,10 +239,6 @@ div.maestros img{
     margin: 1% auto;
     scroll-margin-top: 70px;
 }
-#sobremi{
-    flex-direction: column;
-}
-
 #sobremi img{
     height: 200px;
     object-fit: contain;
@@ -252,18 +252,14 @@ div.maestros img{
 #ubicacionfooter{
     margin: 5% auto;
     flex-direction: column;
-    height: 75%;
+    height: 90%;
     object-fit: contain;
 }
-#redes_contacto{
-    width: 50%;
-    margin: 1%;
-    display: flex;
-    flex-direction: column;
-    height: 75%;
-    object-fit: contain;
-    align-items: center;
-    padding: 3% 0;
+
+iframe {
+    width: 80%;
+    height: 300px;
+    border: none;
 }
 
 .ubicacionfooter{
@@ -278,46 +274,59 @@ div.maestros img{
 .ubicacionfooter p{
     width: 100%;
 }
-.footer{
-    width: 80%;
+
+#redes_contacto{
+    width: 60%;
+    margin: 0.5%;
     display: flex;
+    flex-direction: column;
+    height: 100%;
+    object-fit: contain;
+    align-items: center;
+    padding: 1% 0;
 }
 
-.gmail,.instagram{
-    width: 80%;
-    height: 20%;
+.whatsapp, .gmail,.instagram{
+    width: 100%;
+    height: 100%;
     margin: 1% auto;
 }
 
-.logo_gmail, .logo_instagram{
-    margin-top: 44%;
-    width:70%;
-    height: 600%;
+.logo_whatsapp, .logo_gmail, .logo_instagram{
+    width: 40px;
+    height: 50px;
     object-fit: contain;
 }
+#wpp, #gmail, #instagram {
+    margin-top: 30%;
+    width: 60%;
+}
 
+#logo_redes {
+    width: 50%;
+    height: 60px;
+}
 
-.logo_gmail:hover, .logo_instagram:hover {
+.logo_whatsapp:hover, .logo_gmail:hover, .logo_instagram:hover {
     transition: 0.5s;
     transform: scale(1.15);
     cursor: pointer;
 }
 
 #container_direccion {
+    margin-top: 2%;
     width: 100%;
+    font-size: 16px;
 }
 
 #container_contacto {
+    margin-top: 5%;
     width: 100%;
-}
-
-#puntos {
-    font-size: 52px;
-    width: 100%;
+    font-size: 16px;
 }
 
 #footer {
-    width: 80%;
+    width: 90%;
 }
 
 footer {
@@ -327,8 +336,9 @@ footer {
     color: white;
     padding: 5px;
     text-align: center;
-    width: 100%; 
+    width: 90%; 
     height: auto;
+    height: 400px;
 }
 .copyrigth{
     margin-top: 0;
@@ -353,7 +363,7 @@ footer {
     width: 5.25rem;
     }
     #main{
-        width: 80%;
+        width: 95%;
     }
     .texto_maestros, .texto_sections{
         width: 100%;
@@ -366,17 +376,21 @@ footer {
         margin: 1%;
         padding: 1%;
     }
-    .mari{
-        margin: 1%;
-        width: 100%;
-        display: inline-flex;
-        flex-direction: row;
-        padding: 1%;
-        scroll-margin-top: 70px;
-    }
 
-    #texto_sobremi img{
-        height: 125px
+    iframe {
+        width: 100%;
+        height: 180px;
+        border: none;
+    }    
+
+    #contenedor_beneficios{
+        font-size: 12px;
+        width: 40%;
+        margin: 5px 0;
+    }
+    #footer{
+        height: auto;
+        width: 95%;
     }
 }
 
@@ -391,6 +405,7 @@ footer {
 
     #reiki, #historia, #inicio, #sobremi {
         width: 97%;
+        margin: 1px;
     }
     
     #inicio p, #reiki p, #historia p, #sobremi p, #beneficios p, #footer p {
@@ -438,27 +453,32 @@ footer {
         width: 80%;
         display: flex;
     }
-    .gmail,.instagram{
-        width: 80%;
-        height: 20%;
+    .whatsapp,.gmail,.instagram{
+        height: 26%;
         margin: 1% auto;
     }
 
-    .logo_gmail, .logo_instagram{
-        margin-top: 44%;
-        width:70%;
+    .logo_whatsapp, .logo_gmail, .logo_instagram{
+        margin-top: 20%;
+        width:50px;
         height: 600%;
         object-fit: contain;
     }
     
-    .logo_gmail:hover, .logo_instagram:hover {
-        transition: 0.5s;
-        transform: scale(1.15);
+    .logo_whatsapp:hover, .logo_gmail:hover, .logo_instagram:hover {
+        transform: scale(1.1);
         cursor: pointer;
     }
-    
-    #puntos {
-        display: none;
+
+    #wpp, #instagram, #gmail{
+        width: 40px;
+        margin-top: 40%;
+    }
+
+    #container_direccion, #container_contacto {
+        width: 155px;
+        margin: 0;
+        padding: 0;
     }
 
     #footer {
@@ -471,7 +491,6 @@ footer {
 
     #ubicacionfooter{
         width: 100%;
-        margin-left: -20px;
     }
     #redes_contacto{
         padding: 0;
@@ -487,20 +506,35 @@ footer {
 
     #menu_celu {
         display: block;
-        height: 200px;
+        height: auto;
+        position: relative;
+        margin:10px;
     }
 
-    #menu_celu ul li{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        height: 100%;
-        margin: 0;
-        padding: 0;
+    #menu_celu button {
+        background-color: rgb(58, 128, 63);
     }
-    #menu_celu ul li a{
-        font-size: 1rem;
-        text-decoration: none;
+
+    #letra_menu {
+        font-size: 24px;
+    }
+
+    #menu_celu span {
+        width: 15px;
+        height: 25px;
+        margin: 1px;
+        padding: 2px;
+    }
+
+    #navbarNav {
+        background-color: rgb(34, 71, 37);
+        border-radius: 1%;
+        margin-top: 0;
+    }
+
+    #navbarNav ul {
+        margin: 5px;
+        padding: 0;
+        text-align: center;
     }
 }
