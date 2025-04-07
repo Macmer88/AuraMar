@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0; 
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 #menu_celu {
@@ -28,6 +28,7 @@ body {
     position: sticky;
     top: 0;
     background-color: #ffffff;
+    border-bottom: solid 1px #000000;
 
 }
 #divlogo {
@@ -56,7 +57,7 @@ body {
 }
 
 #reiki, #historia, #inicio, #sobremi {
-    border-radius: 2%;
+    border-radius: 1%;
     width: 100%;
     background-color: rgba(185, 247, 189, 0.75);
 }
@@ -65,10 +66,11 @@ body {
     padding: 1%;
     margin-left: 0px;
     font-size: 17px;
+    text-align: justify;
 }
 
 .boton{
-    background-color: #cac2ed;
+    background-color: #ffffff;
     color: #000000;
     display: flex;
     justify-content: center;
@@ -83,34 +85,35 @@ body {
     color: inherit;
     text-align: center;
     width: 100%;
-    font-size: 14px;
+    font-size: 15px;
 }
 .boton a:hover{
-    color: #000000;
+    color: white;
+    background-color: #84c3be;
     font-size: 15px;
 }
 .boton:hover {
-    background-color: rgba(111, 173, 193, 0.5);
+    background-color: #84c3be;
     border-color: rgb(111, 173, 193);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: transform 0.2s ease-in-out;
 }
 
 #main {
-    background-color: rgba(185, 247, 189, 0.60);
-    width: 90%;
-    padding:1%;
+    background-color: #ffffff;
+    width: 100%;
     flex-direction: column;
 }
 
 #contenedor_logo {
-    background-color: rgba(185, 247, 189, 0.75);
+    background-color: #ffffff;
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
     border-radius: 2%;
+    pointer-events: none;
 }
 
 #inicio, #reiki, #servicios, #historia, #beneficios, #sobremi, .beneficio{
@@ -178,14 +181,14 @@ div.maestros img{
 #relajacion, #equilibrio, #sanacion, #claridad, #emociones{
     width: 70%;
     height: 2.5rem;
-    border: solid, #6c9ec6;
+    border: solid, #84c3be;
     border-radius: 2%;
     margin: 1%;
     align-items: center;
 }
 
 #relajacion:hover, #equilibrio:hover, #sanacion:hover, #claridad:hover, #emociones:hover{
-    background-color: #6c9ec6;
+    background-color: #84c3be;
     color: white;
     width: 80%;
     transform: scale(1.1, 1);
@@ -246,7 +249,6 @@ div.maestros img{
     margin: 1%;
     padding: 1%;
     align-self: center;
-    border: solid 1px;
 }
 
 #ubicacionfooter{
@@ -326,17 +328,17 @@ iframe {
 }
 
 #footer {
-    width: 90%;
+    width: 98%;
 }
 
 footer {
     align-items: center;
     display: flex;
-    background-color: #a3cbec;
+    background-color: rgb(132, 195, 190, 0.75);
     color: white;
     padding: 5px;
     text-align: center;
-    width: 90%; 
+    width: 100%; 
     height: auto;
     height: 400px;
 }
@@ -390,13 +392,13 @@ footer {
     }
     #footer{
         height: auto;
-        width: 95%;
+        width: 90%;
     }
 }
 
 @media (min-width: 0px) and (max-width: 480px) {
     #main {
-        width: 97%;
+        width: 100%;
     }
 
     #divlogo {
@@ -404,12 +406,12 @@ footer {
     }
 
     #reiki, #historia, #inicio, #sobremi {
-        width: 97%;
+        width: 100%;
         margin: 1px;
     }
     
     #inicio p, #reiki p, #historia p, #sobremi p, #beneficios p, #footer p {
-        width: 96%;
+        width: 98%;
         font-size: 13px;
         text-align: left;
     }
@@ -420,8 +422,8 @@ footer {
     }
 
     .boton:hover {
-            transform: scale(1);
-        }
+        transform: scale(1);
+    }
     
     h1{
         font-size: 1.5em;
@@ -449,13 +451,8 @@ footer {
         display: none;
     }
 
-    .footer{
-        width: 80%;
-        display: flex;
-    }
-    .whatsapp,.gmail,.instagram{
-        height: 26%;
-        margin: 1% auto;
+    #sobremi img{
+        width: 75%;
     }
 
     .logo_whatsapp, .logo_gmail, .logo_instagram{
@@ -482,24 +479,34 @@ footer {
     }
 
     #footer {
-        width: 96%;
+        width: 90%;
+    }
+
+    #footer{
+        display: inline;
+        height: auto;
+    }
+    .whatsapp,.gmail,.instagram{
+        height: 26%;
+        margin: 1% auto;
+    }
+
+    #redes_contacto{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    #ubicacionfooter{
+        width: 100%;
+        margin: 10px;
+        height: 200px;
     }
 
     .copyrigth{
         width: 80%;
     }
 
-    #ubicacionfooter{
-        width: 100%;
-    }
-    #redes_contacto{
-        padding: 0;
-        margin: 0;
-    }
-    
-    .ubicacionfooter{
-        margin: 0;
-    }
     #navbar{
         display: none !important;
     }
@@ -512,11 +519,12 @@ footer {
     }
 
     #menu_celu button {
-        background-color: rgb(58, 128, 63);
+        background-color:#84c3be;
     }
 
     #letra_menu {
         font-size: 24px;
+        color: #000000;
     }
 
     #menu_celu span {
@@ -527,7 +535,7 @@ footer {
     }
 
     #navbarNav {
-        background-color: rgb(34, 71, 37);
+        background-color: #84c3be;
         border-radius: 1%;
         margin-top: 0;
     }
@@ -536,5 +544,19 @@ footer {
         margin: 5px;
         padding: 0;
         text-align: center;
+    }
+    #navbarNav li a {
+        color: white;
+    }
+    #navbarNav li a:hover {
+        background-color: #ffffff;
+        color: #84c3be;
+    }
+
+    .container-fluid {
+        background-color: #ffffff;
+    }
+    .nav-item {
+        color: black;
     }
 }
