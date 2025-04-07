@@ -24,6 +24,7 @@ body {
     justify-content: center;
 }
 #header{
+    z-index: 1060;
     padding: 0;
     position: sticky;
     top: 0;
@@ -62,14 +63,15 @@ body {
     background-color: rgba(185, 247, 189, 0.75);
 }
 
-#inicio p, #reiki p, #historia p, #sobremi p {
+#inicio p, #reiki p, #historia p, #sobremi p, #beneficios p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 1%;
     margin-left: 0px;
-    font-size: 17px;
+    font-size: 16px;
     text-align: justify;
 }
 
-.boton{
+.boton {
     background-color: #ffffff;
     color: #000000;
     display: flex;
@@ -80,7 +82,7 @@ body {
     border-radius: 5%;
     margin: 0.8% 0.2%;
 }
-.boton a{
+.boton a {
     text-decoration: none;
     color: inherit;
     text-align: center;
@@ -126,17 +128,21 @@ body {
 }
 
 h1{
+    font-family: "Montserrat Alternates", sans-serif;
+    width:100%;
+    text-align: center;
+    margin-top: 1%;
+    font-size: 2.2em;
+    font-weight: bold;
+}
+
+h2{
+    font-family: "Montserrat Alternates", sans-serif;
     width:100%;
     text-align: center;
     margin-top: 1%;
     font-size: 2em;
-}
-
-h2{
-    width:100%;
-    text-align: center;
-    margin-top: 1%;
-    font-size: 1.6em;
+    font-weight: bold;
 }
 .texto_sections{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -145,7 +151,7 @@ h2{
     margin: 1% 1%;
     text-align: justify;
     color: #000000;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     margin-bottom: 20px;
 }
 
@@ -205,7 +211,7 @@ div.maestros img{
 
 #relajacion_mas,#equilibrio_mas, #sanacion_mas, #claridad_mas, #emociones_mas{
     display:none;
-    border-radius: 5%;
+    border-radius: 1%;
     background-color: #d0e6f7;
     color: white;
     width: 90%;
@@ -242,6 +248,7 @@ div.maestros img{
     margin: 1% auto;
     scroll-margin-top: 70px;
 }
+
 #sobremi img{
     height: 200px;
     object-fit: contain;
@@ -249,6 +256,24 @@ div.maestros img{
     margin: 1%;
     padding: 1%;
     align-self: center;
+}
+
+#ver_mas {
+    padding: 0;
+    background-color: #84c3be;
+    border: none;
+    color: #000000;
+    font-size: 20px;
+}
+
+#ver_mas:hover{
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+#texto_ver_mas{
+    font-size: 15px;
+    color: #000000;
 }
 
 #ubicacionfooter{
@@ -362,8 +387,16 @@ footer {
         display: none !important;
     }
     .boton{
-    width: 5.25rem;
+    width: 5rem;
     }
+    .boton a{
+        font-size: 13px;
+        margin: 5px;
+    }
+    .boton a:hover{
+        font-size: 13px;
+    }
+
     #main{
         width: 95%;
     }
@@ -379,16 +412,30 @@ footer {
         padding: 1%;
     }
 
+    #historia_grande{
+        display: none;
+    }
+
     iframe {
         width: 100%;
         height: 180px;
         border: none;
-    }    
-
+    }
+    #accordionFlush {
+        width: 100%
+    }
+    #flush-headingOne button {
+        background-color: #84c3be;
+        color: white;
+        font-size: 1em;
+    }
     #contenedor_beneficios{
         font-size: 12px;
         width: 40%;
         margin: 5px 0;
+    }
+    .cerrar{
+        width: 100px;
     }
     #footer{
         height: auto;
@@ -403,6 +450,25 @@ footer {
 
     #divlogo {
         display: none;
+    }
+
+    #contenedor_logo {
+        width: 100%;
+        height: 180px;
+        margin-bottom: 20px;
+    }
+    
+    #Logo_animado {
+        width: 90%;;
+    }
+
+    #inicio h1 {
+        margin-top: 20px;
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.7em;
     }
 
     #reiki, #historia, #inicio, #sobremi {
@@ -424,21 +490,21 @@ footer {
     .boton:hover {
         transform: scale(1);
     }
-    
-    h1{
-        font-size: 1.5em;
-    }
-    
-    h2{
-        font-size: 1.2em;
-    }
 
     div.maestros img {
         display: flex;
         height: 60px;
     }
 
-    #maestrouno img, #maestrodos img, #maestrotres img {
+    #historia_grande {
+        display: none;
+    }
+
+    #accordionFlush {
+        width: 100%
+    }
+
+    #maestrouno img, #maestrodos img, #maestrotres img, #maestrounoH img, #maestrodosH img, #maestrotresH img {
         float: left;
     }
     
@@ -453,6 +519,10 @@ footer {
 
     #sobremi img{
         width: 75%;
+    }
+
+    #ver_mas {
+        font-size: 15px;
     }
 
     .logo_whatsapp, .logo_gmail, .logo_instagram{
@@ -476,6 +546,12 @@ footer {
         width: 155px;
         margin: 0;
         padding: 0;
+    }
+
+    #flush-headingOne button {
+        background-color: #84c3be;
+        color: white;
+        font-size: 1em;
     }
 
     #footer {
@@ -523,8 +599,11 @@ footer {
     }
 
     #letra_menu {
-        font-size: 24px;
-        color: #000000;
+        font-size: 28px;
+        font-weight: bold;
+        color:#84c3be;
+        font-family: "Montserrat Alternates", sans-serif;
+        font-style: normal;
     }
 
     #menu_celu span {
