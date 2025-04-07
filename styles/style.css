@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-#menu_celu {
+#menu_celu, #beneficios_celu {
     display: none;
 }
 
@@ -57,7 +57,13 @@ body {
     margin: 1%;
 }
 
-#reiki, #historia, #inicio, #sobremi {
+#inicio{
+    border-radius: 1%;
+    width: 100%;
+    background-color: rgba(132, 195, 190, 0.5);
+}
+
+#reiki, #historia, #sobremi {
     border-radius: 1%;
     width: 100%;
     background-color: rgba(185, 247, 189, 0.75);
@@ -221,7 +227,7 @@ div.maestros img{
 
 }
 .cerrar{
-    width: 10%;
+    width: 60px;
     height: fit-content;
     display: flex;
     object-fit: contain;
@@ -229,7 +235,7 @@ div.maestros img{
     padding: 0;
 }
 .cerrar img{
-    width: 100%;
+    width: 25px;
     height: fit-content;
     object-fit: contain;
 }
@@ -359,7 +365,7 @@ iframe {
 footer {
     align-items: center;
     display: flex;
-    background-color: rgb(132, 195, 190, 0.75);
+    background-color: rgba(132, 195, 190, 0.75);
     color: white;
     padding: 5px;
     text-align: center;
@@ -383,7 +389,7 @@ footer {
 
 @media (min-width: 481px) and (max-width: 768px) {
     /* Tus estilos exclusivos para tablets */
-    #menu_celu {
+    #menu_celu, #beneficios_celu {
         display: none !important;
     }
     .boton{
@@ -516,7 +522,10 @@ footer {
     #contenedor_beneficios{
         display: none;
     }
-
+    #beneficios_celu {
+        display: flex;
+        width: 90%;
+    }
     #sobremi img{
         width: 75%;
     }
@@ -554,11 +563,8 @@ footer {
         font-size: 1em;
     }
 
-    #footer {
-        width: 90%;
-    }
-
     #footer{
+        width: 92%;
         display: inline;
         height: auto;
     }
