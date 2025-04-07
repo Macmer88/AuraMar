@@ -57,13 +57,13 @@ body {
     margin: 1%;
 }
 
-#inicio{
+#inicio, #historia {
     border-radius: 1%;
     width: 100%;
     background-color: rgba(132, 195, 190, 0.5);
 }
 
-#reiki, #historia, #sobremi {
+#reiki, #sobremi {
     border-radius: 1%;
     width: 100%;
     background-color: rgba(185, 247, 189, 0.75);
